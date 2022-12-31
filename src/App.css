@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 100ms;
+  color: rgb(230, 230, 230);
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+}
+
+form {
+  padding: 40px;
+  max-width: 500px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+label {
+  color: white;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  animation: fadeIn 200ms ease-in-out;
+}
+
+input {
+  height: 35px;
+  padding: 5px;
+  border-radius: 2px;
+  margin: 8px;
+  border: none;
+  font-size: 18px;
+  animation: fadeIn 300ms ease-in-out;
+  color: rgb(20, 20, 20);
+  background-color: rgb(230, 230, 230);
+}
+
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: -3px 3px 0px salmon;
+}
+
+button {
+  cursor: pointer;
+  color: rgb(20, 20, 20);
+  margin: 5px;
+  height: 35px;
+  min-width: 70px;
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  letter-spacing: 1px;
+  font-weight: 600;
+  animation: fadeIn 1000ms ease-in-out;
+  box-shadow: 0px 3px 10px rgb(20, 20, 20);
+  border-bottom: 3px solid rgb(87, 87, 87);
+}
+
+button:active {
+  box-shadow: 0px 0px 5px black;
+  transform: translateY(2px);
+}
+
+.form-switch {
+  background-color: rgb(193, 123, 240);
+}
+.form-title {
+  color: rgb(230, 230, 230);
+  padding-block: 20px;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.form-holder {
+  padding: 20px;
+  width: 600px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.568);
+  margin: 0 auto;
+  animation: fadeIn 500ms ease-in-out;
+  /*  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: repeating-linear-gradient(
+    -45deg,
+    #252830,
+  
+    #282c34 25px
+  ); */
+}
+
+.form-error-msg {
+  width: 50%;
+  font-size: 14px;
+  text-align: left;
+  color: rgb(255, 170, 170);
+}
+
+.login-container {
+  padding: 40px;
+}
+
+.o5 {
+  opacity: 0.5;
+}
+
+.btn-blink-green {
+  background-color: rgb(241, 241, 241);
+  animation: blinkBtn 2s infinite;
+}
+
+@keyframes blinkBtn {
+  0% {
+    background-color: rgb(241, 241, 241);
+  }
+  50% {
+    background-color: rgb(241, 241, 241);
+  }
+  51% {
+    background-color: rgb(184, 241, 178);
+  }
+  100% {
+    background-color: rgb(181, 238, 176);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
